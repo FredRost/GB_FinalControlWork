@@ -42,3 +42,11 @@ string[] LessThanThreeArray(string[] array)
 
     return resultArray;
 }
+
+int sizeArray = InputInt("Введите размер массива");
+string[] array = InpuntArray(sizeArray);
+System.Console.WriteLine("Полученный массив");
+PrintArray(array);
+string[] resultArray = LessThanThreeArray(array);
+System.Console.WriteLine("Новый массив с элементами, длина которых меньше либо равна 3 символа");
+PrintArray(resultArray);
